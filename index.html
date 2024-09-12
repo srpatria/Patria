@@ -3,21 +3,20 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Enigma do Tesouro</title>
-    <link rel="stylesheet" href="style.css">
+    <title>História Interativa</title>
+    <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-    <div class="container">
-        <h1>Enigma do Tesouro</h1>
-        <div class="enigma">
-            Encontre o tesouro! Resolva o enigma abaixo para descobrir a localização:
-            <br><br>
-            <strong>Eu sou leve como uma pena, mas mesmo o homem mais forte não pode me segurar por muito tempo. O que sou eu?</strong>
-        </div>
-        <input type="text" id="answer" placeholder="Digite sua resposta aqui">
-        <button onclick="checkAnswer()">Verificar Resposta</button>
-        <div id="message" class="message"></div>
+
+    <div id="story">
+        <h1>Bem-vindo à Aventura!</h1>
+        <p>Você está em uma floresta misteriosa. À sua frente, há duas trilhas: uma leva a uma cabana antiga e a outra leva a um rio brilhante. Para onde você vai?</p>
+        <button class="choice-button" onclick="choose('cabin')">Ir para a cabana</button>
+        <button class="choice-button" onclick="choose('river')">Ir para o rio</button>
     </div>
+
     <script src="script.js"></script>
+
 </body>
 </html>
+
